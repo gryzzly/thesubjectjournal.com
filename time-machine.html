@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Utopian Dress - Time Machine</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="horizontal-wrapper" style="transform: scale(.85);">
+    <div class="tm-splash horizontal-item">
+      <h1 class="tm-splash-title">Utopia:<br><span>past</span></h1>
+      <p class="tm-splash-intro">This is a prototype<br> of a time machine <br>click on the dates to travel</p>
+      <div class="tm-control-panel">
+        <a href="#y1551">1551</a>
+        <a href="#y1800">1800</a>
+        <a href="#y1830">1830</a>
+        <a href="#y1851">1851</a>
+        <a href="#y1860">1860</a>
+        <a href="#y1881">1881</a>
+        <a href="#y1890">1890</a>
+        <a href="#y1910">1910</a>
+        <a href="#y1930">1930</a>
+        <a href="#y1931">1931</a>
+        <a href="#y1950">1950</a>
+        <a href="#y1960">1960</a>
+        <a href="#y1998">1998</a>
+        <a href="#y2014">2014</a>
+      </div>
+    </div>
+    <div class="tm-intro horizontal-item">
+      <blockquote class='tm-quote'>
+        <h1>‘Never has been a <br>utopian wish or <br>realisation without serious <br>consideration of clothes’</h1>
+        <cite>Richard Martin</cite>
+      </blockquote>
+      <div class="tm-content">
+        <p>The long literary tradition of utopian genre in which the authors fantasize of  better societies or utopias (from Greek u or ou, no, not; topos, place) found its realization in a political trend of utopianism or social dreaming. Various schools of utopianists, be it early socialists of the 19th century or the first adepts of cybernetic utopia of the 1950-s, dreamt differently and sometimes even oppositionally. However, every utopian dream shares certain common elements, including well articulated dress code represented by utopian dress that supports and reaffirms the values promoted by utopian ideologists.</p>
+      </div>
+    </div>
+    <div id="y1551" class="tm-item horizontal-item">
+      <h1 class="tm-year centered">1551</h1>
+      <div class="tm-content centered">
+        <p><img src="imgs/tm/2.png"></p>
+        <p>Before becoming real  utopian dress existed on the pages of the early fictional utopias, such as Thomas More’s Utopia, inhabitants of which wore clothes that were uncoloured and all cut to the same pattern. </p>
+      </div>
+    </div>
+
+    <div id="y1800" class="tm-item horizontal-item">
+      <h1 class="tm-year centered">1800</h1>
+      <img src="imgs/tm/4.jpg" class="centered">
+      <div class="tm-content grid centered">
+        <div class="grid bottom">
+          <div class="col-3-4">
+            <div class="module">
+              <img src="imgs/tm/4-2.jpg">
+            </div>
+          </div>
+          <div class="col-1-4 small-type">
+            <p>01. Owenite’s women from New Harmony settlement, Indiana, US.</p>
+            <p>02. Black Quaker dress with black pointed cape and apron. Black Quaker dress with white linen cape and apron</p>
+            <p>03. Quaker fashion blogger Jane.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <p>Victorian dress reform the main aim of which was to liberate people from uncomfortable, not hygienic clothes of old times were developing throughout the whole 19th century.</p>
+          <p>An interest in the dress reform started to emerge under the influence of a number of progressive communitarian settlements and religious communities in the US and UK, that spared their women from necessity to wear stiff corsets in favor of plain, simplified dresses, shorter skirts and even trousers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="y1830" class="tm-item horizontal-item">
+      <h1 class="tm-year centered">1830-s</h1>
+      <div class="tm-content centered grid">
+        <p class="col-1-4">French socialists  devised a gender neutral uniform to fight against status and gender stereotypes imposed by class-based society.  The uniform was buttoned all the way to the back, so one could not get out of the costume without help from another person – this way socialists showed the interdependence of community members.</p>
+        <div class="module col-3-4">
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script>
+$(function() {
+    $('a[href*=#]').bind('click',function(event){
+        var $anchor = $(this);
+        
+        // if you want to use one of the easing effects:
+        $('html, body').stop().animate({
+            scrollLeft: $($anchor.attr('href')).offset().left
+        }, 500,'easeInQuad');
+
+        event.preventDefault();
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Utopian Dress - Time Machine</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <header class="inner-header" style="transform: scale(1.05)">
+    <span class="inner-no">2</span>
+    <span class="inner-title">state of emergency</span>
+    <span class="inner-person">Wali Mohamed Barrech SS'15</span>
+  </header>
+  <main class="inner-page">
+    <div class="main-visual">
+      <img src="imgs/wali/1.png">
+    </div>
+    <div class="main-content grid">
+      <div class="main-text col-1-2">
+        <div class="text-1">
+          <p class="main-question">Your designs are described by some fashion journalists as dystopian. Would you agree with this description?</p>
+          <p class="main-answer">Im ambivalent. Because of course I I try to narrate societal/global moods, this might come across as “dystopian” as I use alarming references, but on the other hand I don’t see this as “the end” , I find it a rather positive, conscious intelligent way of communicating shared contemplation.</p>
+          <p class="main-question">If your clothes reflect the dystopian mood of today’s world how would you describe, on the contrary, a utopian dress? How would you imagine a fashion utopia?</p>
+          <p class="main-answer">Dystopia and utopia are imaginative, subjective which they should be. What I try to say or describe with my work is commentary of societal effects on my life, as I am also part of a society and need to be “functional”. The way my surrounding affects me and vice versa. So that said, I don’t think my work is not just a dystopian forecast. With this I try to provoke a dialog on the power and properties the dress inherits. This is very utopian or positive or powerful. I want thinks to matter.</p>
+          <p class="main-question">In one interview you mentioned that you see fashion as a universal language. Is it possible to ‘stay silent’ in terms of fashion, not to send any messages to the outer world?
+          <p class="main-answer">I guess that depends on what you want to say and in what context you put it. Is this the trickle down effect or are we talking about perpetuating unrealistic ideals such as mass fur production to name just one.
+          <p class="main-answer">I think it really depends on how well you as a consumer or designer are skilled in reading references etc. for the common consumer it is still just a product because it is marketed as such. But I think as designers today, it is our responsibility to create new sustainable ideals.(a new luxury )
+        </div>
+        <div class="text-2">
+          <p class="main-question">What would you say about the concept of gender in fashion today? Is it still relevant and will it be relevant in the nearest future?
+          <p class="main-answer">I don’t find it relevant to distinguish between genders for the garments and world im envisioning.
+          <p class="main-question">You pay a lot of attention to the materials you use for your collections.  What are your do’s and dont’s, what material you would never use? Do you have any hypothesis on how fashion materials will develop in future?
+          <p class="main-answer">I only use materials that underline the concept im working on. Also I try to work with the properties of a given material and not force it to be something it isn’t.
+          <p class="main-answer">I cant say twhat I wouldn’t really work with…uranium?
+          <p class="main-answer">I guess there is a strong movement on sustainability these days. However I find sustainability starts in the mind and in our habits and not only by harvesting organic cotton in the billions which are even more hazardous to the environment.
+          <p class="main-question">What are the main inspirations behind your last collection?
+          <p class="main-answer">Urbanizing/aestheticizing state of emergency.  Utility wear, sportswear, performance wear.
+          <p class="main-question">How, in your opinion, a regular person can resist the global challenges of fashion consumerism?
+          <p class="main-answer">By being given an alternative. One where he/she can actually see, understand and react to. Educative products are important
+        </div>
+        <div class="text-3">
+          <p class="main-question">What are the examples of conscious fashion production and design that you admire? Can you think of any global brands that could be described as ethical and conscious?
+          <p class="main-answer">there are several which take new approaches on this matter. In Scandinavia there are many that source and produce locally, like me. From my experience so far even big companies that aren’t known for taking this path are very open to collaborations and provide knowhow and production to stustain quality and production.
+          <p class="main-question">Do you think it’s possible to avoid falling into usual traps of big fashion world and still show your collections and sell your stuff on commercial scale?
+          <p class="main-answer">I truly believe that now is the time for this more than ever as we are more and more aware of these “traps” and can read them and also read between the lines. I think it is very tough though, as it becomes very difficult to compete on many levels with the ”big ones”.
+          <p class="main-answer">The lesson to be learnt is that one cant do it alone, we are all dependent on each others help more than ever and that is the biggest asset we have in our times. Work together, collaborate and help each other up to success, then share your knowledge and help others. Like this we sustain an intelligent, cooperative, realistic society.
+          <p class="main-question">Do you plan to continue alarming people with your designs or will you develop new themes in new collections?
+          <p class="main-answer">My main objective isn’t being alarming.  This is my way of digesting what I see and engage with around me.
+          <p>Images belong to:<br>
+            1. Copenhagen Fashion Week archive.<br>
+            2. Wali Mohammed Barrech .
+          </p>
+        </div>
+        <div class="text-4" style="height: 110%">
+        </div>
+      </div>
+      <div class="main-image">
+        <img src="imgs/wali/img-1.jpg">
+      </div>
+    </div>
+  </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>
+$(function () {
+  var mainText = $('.main-text'),
+      throttling = false,
+      img = $('.main-image > img'),
+      imgSrc = img.attr('src'),
+      mainTextOffset = mainText.offset(),
+      mainTextPadding = parseInt(mainText.css('padding-top')),
+      iteratingElement,
+      positions = [];
+
+  preload([
+    'imgs/mali/img-1.jpg',
+    'imgs/mali/img-2.jpg',
+    'imgs/mali/img-3.jpg',
+  ]);
+
+  mainText.css('overflow', 'scroll');
+
+  mainText.on('scroll', onScroll);
+
+  mainText.children().each(function (index, element) {
+    iteratingElement = $(element);
+    positions.push(
+      iteratingElement.offset().top - mainTextOffset.top - - mainText.scrollTop() - mainTextPadding
+    );
+  });
+
+  function onScroll () {
+    var current;
+
+    if (throttling) {
+      return;
+    }
+
+    throttling = true;
+
+    setTimeout(function () {
+      throttling = false;
+    }, 100);
+
+    currentIndex = matchPosition(mainText.scrollTop()) + 1;
+    if (getFilename(imgSrc) !== 'img-' + currentIndex) {
+      img.attr('src', 'imgs/wali/img-' + currentIndex + '.jpg');
+      imgSrc = img.attr('src');
+    }
+  }
+
+  function matchPosition (scrollValue) {
+    for (var i = 0, len = positions.length, next, current; i < len; i++) {
+      current = positions[i];
+      next = positions[i + 1] || Infinity;
+      if (scrollValue >= current && scrollValue < next) {
+        return i;
+      }
+    }
+  }
+
+  function getFilename (src) {
+    return src.split('/').pop()
+  }
+
+  function preload (srcs) {
+    srcs.forEach(function (src) {
+      var img = new Image ();
+      img.src = src;
+    })
+  }
+});
+</script>
+</body>
+</html>
