@@ -242,7 +242,22 @@ $(function() {
 
         event.preventDefault();
     });
+
+    $(document).on('keydown', function (e) {
+      var direction, code = e.keyCode || e.which;
+      /* 37 left, 39 right */
+      if ( code === 37 || code === 39 ) {
+        debugger;
+        e.preventDefault();
+
+        $('html, body').stop().animate({
+          scrollLeft: ( code === 37 ) ? /* left */'-=400px' : /* right */ '+=400px'
+        });
+      }
+    });
 });
+
+
 </script>
 </body>
 </html>
