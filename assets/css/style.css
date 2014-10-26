@@ -119,6 +119,17 @@ ol {
   vertical-align: middle;
   visibility: hidden;
 }
+
+.vertical-centered-container::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  margin-right: -1px;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
 .vertical-centered {
   display: inline-block;
   vertical-align: middle;
@@ -520,13 +531,17 @@ ol {
   margin: 0 200px 0 400px;
 }
 
-/* Inner Page */
+/* Inner Page
+-------------------------------------*/
+.body-inner {
+  min-width: 960px;
+}
 .inner-header {
   position: fixed;
   left: 85px;
   top: 85px;
-  text-align: center;
-  width: 0;
+  text-align: left;
+  width: 122px
 }
   .inner-header span {
     display: block;
@@ -538,6 +553,7 @@ ol {
     /*margin-left: -.1ex;*/
   }
   .inner-title {
+    font-size: 24px;
     font-family: nanamithin;
   }
   .inner-person {
@@ -545,6 +561,7 @@ ol {
   }
 .inner-page {
   margin-left: 220px;
+  width: 740px;
 }
 
 .main-visual {
@@ -577,3 +594,42 @@ ol {
   .main-image img[src="imgs/wali/img-4.jpg"] {
     width: auto;
   }
+
+.future-predicts-fashion .main-visual {
+  border: 1px dashed #000;
+  height: 520px;
+  margin: 0 0 40px;
+  color: #f92424;
+}
+
+.future-predicts-fashion .main-visual-content-container {
+  float: left;
+  width: 62%;
+  height: 100%;
+}
+.future-predicts-fashion .main-visual-content {
+  width: 284px;
+  padding-left: 80px;
+}
+.future-predicts-fashion .main-visual-content p {
+  margin-bottom: 2em;
+}
+
+.future-predicts-fashion .main-text {
+  width: 470px;
+  margin-right: 20px;
+}
+
+.future-predicts-fashion .main-text p {
+  margin: 0 0 1em;
+}
+
+.future-predicts-fashion .main-image {
+  width: 220px;
+}
+
+.future-predicts-fashion .main-content-visual-image-container {
+  float: right;
+  width: 38%;
+  height: 100%;
+}
