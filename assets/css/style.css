@@ -539,7 +539,7 @@ ol {
 .inner-header {
   position: fixed;
   left: 85px;
-  top: 85px;
+  top: 160px;
   text-align: left;
   width: 122px
 }
@@ -595,6 +595,7 @@ ol {
     width: auto;
   }
 
+/*
 .future-predicts-fashion .main-visual {
   border: 1px dashed #000;
   height: 520px;
@@ -614,11 +615,32 @@ ol {
 .future-predicts-fashion .main-visual-content p {
   margin-bottom: 2em;
 }
+*/
+
+.future-predicts-fashion .main-content {
+  margin-top: -40px;
+  height: 600px;
+  position: relative;
+}
 
 .future-predicts-fashion .main-text {
   width: 470px;
+  height: 100%;
   margin-right: 20px;
+  padding-right: 30px;
 }
+
+.future-predicts-fashion .main-text-banner {
+  height: 100%;
+  padding: 0 40px;
+  color: #f92424;
+  font-family: nanamibook;
+}
+  .future-predicts-fashion .main-text-banner-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
 .future-predicts-fashion .main-text p {
   margin: 0 0 1em;
@@ -626,10 +648,12 @@ ol {
 
 .future-predicts-fashion .main-image {
   width: 220px;
+  height: 100%;
+  position: relative;
 }
 
-.future-predicts-fashion .main-content-visual-image-container {
-  float: right;
-  width: 38%;
-  height: 100%;
+.future-predicts-fashion .main-image img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }

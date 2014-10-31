@@ -16,7 +16,7 @@
     <span class="inner-person">a dream of<br>an elderly gentleman</span>
   </header>
   <main class="inner-page">
-    <div class="main-visual grid">
+    <!-- <div class="main-visual grid">
       <div class="main-visual-content-container col-1-2 vertical-centered-container">
         <div class="vertical-centered main-visual-content">
           <p>The Subject magazine offers you a one way ticket to a delirious fashion fantasy of an elderly gentleman who fell asleep almost 120 years ago and saw a fashion utopia dream later published in Strand magazine.</p>
@@ -26,9 +26,15 @@
       <div class="main-content-visual-image-container vertical-centered-container">
         <img src="imgs/6/visual.png" class="main-content-visual-image vertical-centered">
       </div>
-    </div>
+    </div> -->
     <div class="main-content grid">
       <div class="main-text col-2-3">
+        <div class="main-text-banner">
+          <div div class="main-text-banner-content">
+            <p><span class="main-text-image-marker" data-image="imgs/6/visual.png">The Subject magazine</span> offers you a one way ticket to a delirious fashion fantasy of an elderly gentleman who fell asleep almost 120 years ago and saw a fashion utopia dream later published in Strand magazine.</p>
+            <p>Just a reminder of how doubtful fashion predictions can actually be. Dream big, predict wisely...or better don’t predict at all.</p>
+          </div>
+        </div>
         <p><span class="main-text-image-marker" data-image="imgs/6/1.png">An elderly gentleman of our acquaintance</span>, whose reading has been rather desultory than profound, and tending rather to the quaint and speculative, was astonished recently at coming across a volume in his library of whose very existence he had been completely unaware. This volume was oblong in shape, was bound in mauve morocco, and was called "Past Dictates of Fashion; by Cromwell Q. Snyder, Vestamentorum Doctor."
 Glancing his eye downwards past a somewhat flippant sub-title, the elderly gentleman came, with intense amazement, to understand that the date of this singular performance was 1993. Other persons at a similar juncture would have pinched themselves to see if they were awake, or have tossed the book into the street as an uncanny thing. But our elderly gentleman being of an inquisitive and acquisitive turn of mind, despite his quaintness, recognised the fact that if he was not of the twentieth century the volume obviously was; seized pen and paper, and began to make notes with the speed of lightning. Being also something of a draughtsman he was able to embellish his notes with sketches from the engravings with which "Past Dictates of Fashion" was copiously furnished. These sketches appear with the present article.</p>
         <p>Fashion in dress, according to the twentieth century author, notwithstanding its apparent caprice, has always been governed by immutable laws. But these laws were not recognised in the benighted epoch in which we happen to live at present. On the contrary, Fashion is thought a whim, a sort of shuttlecock for the weak-minded of both sexes to make rise and fall, bound and rebound with the battledore called—social influence. But it will interest a great many people to learn that Fashion assumed the dignity of a science in 1940. Ten years later it was taken up by the University of Dublin. By the science as taught by the various Universities later on were explained those points in the history, manners, and literature of our own ancestors which were formerly obscure and, in fact, unknown. They were also, by certain strict rules, enabled to foretell the attire of posterity. Here is a curious passage from the introductory chapter to the book:—</p>
@@ -70,7 +76,7 @@ The author furthermore observes that "the single article of apparel which stands
 At this juncture the notes and nap together terminated, for our elderly gentleman woke up.</p>
       </div>
       <div class="main-image col-1-3">
-        <img src="imgs/6/1.png">
+        <img src="imgs/6/visual.png">
       </div>
     </div>
   </main>
@@ -105,8 +111,6 @@ $(function () {
       src: imgSrc
     });
   });
-
-  debugger;
 
   function onScroll () {
     var currentItem;
