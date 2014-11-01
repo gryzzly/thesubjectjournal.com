@@ -628,7 +628,9 @@ ol {
   height: 100%;
   margin-right: 20px;
   padding-right: 30px;
-  padding-bottom: 150px;
+}
+.future-predicts-fashion .main-text > *:last-child {
+  padding-bottom: 200px;
 }
 
 .future-predicts-fashion .main-text-banner {
