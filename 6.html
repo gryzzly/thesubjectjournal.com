@@ -84,7 +84,7 @@ At this juncture the notes and nap together terminated, for our elderly gentlema
 <script>
 $(function () {
   var mainText = $('.main-text'),
-      throttling = false,
+      waiting = false,
       img = $('.main-image > img'),
       markers = mainText.find('.main-text-image-marker'),
       imgSrc = img.attr('src'),
@@ -113,18 +113,19 @@ $(function () {
   });
 
   function onScroll () {
-    var currentItem;
-
-    if (throttling) {
+    if (waiting) {
       return;
     }
 
-    throttling = true;
+    waiting = true;
 
     setTimeout(function () {
-      throttling = false;
+      waiting = false;
+      updateImageSrc();
     }, 100);
+  }
 
+  function updateImageSrc () {
     currentItem = positions[matchPosition(mainText.scrollTop())];
 
     if (!currentItem) {
