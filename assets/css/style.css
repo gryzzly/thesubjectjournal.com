@@ -60,38 +60,100 @@ ol {
 .small-type {
   font-size: 15px;
 }
-/* Home Page
+/* Index Page
 -------------------------------------*/
-.home-cols {
-  overflow: hidden;
+.index {
+  width: 944px;
+  height: 600px;
+  margin: 100px auto;
 }
-[class^=home-col-] {
+
+.index-text {
   float: left;
+  height: 100%;
+  width: 45%;
+  text-align: right;
   position: relative;
-  width: 190px;
 }
-.home-col-3,
-.home-col-4 {
-  padding-top: 184px;
-}
-  .home-counter {
-    position: absolute;
-    font-size: 10px;
+
+  .index-title {
+    font-size: 72px;
+    font-weight: bold;
+    margin: 0 0 86px;
   }
-.home-content {
-  margin-top: -45px;
-  margin-left: 10px;
+
+  .index-issue-title {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .index-list li {
+    list-style: none;
+    margin-bottom: 14px;
+  }
+
+  .index-tagline {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+.index-image-map {
+  float: right;
+  width: 48%;
+  position: relative;
 }
-.home-content h1 {
-  font-size: 14px;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-}
-.home-content ol {
-  /*list-style-type: none;*/
-  list-style-position: inside;
-}
+  .index-image-map-list {
+    list-style: none;
+  }
+  .index-image-map a {
+    position: absolute;
+    text-indent: -9000px;
+  }
+  .index-image-map .time-machine {
+    left: 143px;
+    top: 0;
+    height: 150px;
+    width: 150px;
+  }
+  .index-image-map .spacewear {
+    left: 143px;
+    top: 164px;
+    height: 155px;
+    width: 150px;
+  }
+  .index-image-map .modern-utopia {
+    left: 320px;
+    top: 164px;
+    height: 105px;
+    width: 125px;
+  }
+  .index-image-map .future {
+    left: 14px;
+    top: 324px;
+    height: 134px;
+    width: 104px;
+  }
+  .index-image-map .observation {
+    left: 143px;
+    top: 324px;
+    width: 150px;
+    height: 145px;
+  }
+  .index-image-map .elizabeth {
+    left: 320px;
+    top: 278px;
+    height: 166px;
+    width: 125px;
+  }
+  .index-image-map .wali {
+    left: 143px;
+    top: 460px;
+    height: 150px;
+    width: 150px;
+  }
 
 /* Time Machine
 -------------------------------------*/
