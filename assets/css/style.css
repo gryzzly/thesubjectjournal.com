@@ -50,6 +50,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+html,
+body {
+  height: 100%;
+}
 body {
   font-family: nanamibook;
   margin: 50px;
@@ -657,7 +661,46 @@ ol {
     width: auto;
   }
 
-.future-predicts-fashion .main-content {
+.future-predicts-fashion {
+  margin:0;
+}
+.future-predicts-fashion .inner-header {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.future-predicts-fashion .inner-page {
+  height: 100%;
+}
+.future-predicts-fashion .main-text {
+  width: 340px;
+  height: auto;
+  margin-left: 40px;
+}
+.future-predicts-fashion .main-image {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 620px;
+  width: 220px;
+}
+
+.future-predicts-fashion .main-text > *:last-child {
+  padding-bottom: 200px;
+}
+
+.future-predicts-fashion .main-text-banner {
+  padding: 0 40px;
+  color: #f92424;
+  font-family: nanamibook;
+}
+  .future-predicts-fashion .main-text-banner-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+/*.future-predicts-fashion .main-content {
   margin-top: -40px;
   height: 600px;
   position: relative;
@@ -669,21 +712,6 @@ ol {
   margin-right: 20px;
   padding-right: 30px;
 }
-.future-predicts-fashion .main-text > *:last-child {
-  padding-bottom: 200px;
-}
-
-.future-predicts-fashion .main-text-banner {
-  height: 100%;
-  padding: 0 40px;
-  color: #f92424;
-  font-family: nanamibook;
-}
-  .future-predicts-fashion .main-text-banner-content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
 
 .future-predicts-fashion .main-text p {
   margin: 0 0 1em;
@@ -699,7 +727,7 @@ ol {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
+}*/
 /* 5.html Observation Manual */
 .observation-manual .inner-no {
   background: url(../../imgs/5/1.png) left top no-repeat;
@@ -721,4 +749,8 @@ ol {
   width: 180px;
   min-height: 1006px;
   padding: 50px 0 0 40px;
+}
+
+.observation-manual dd {
+  margin: 10px;
 }
