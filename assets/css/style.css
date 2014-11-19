@@ -637,7 +637,6 @@ ol {
   width: 45%;
   /*padding: 30px;*/
   height: 600px;
-  overflow: scroll;
   font-family: verdana;
   line-height: 1.4;
   overflow: hidden;
@@ -657,26 +656,24 @@ ol {
   .main-image img {
     width: 100%;
   }
-  .main-image img[src="imgs/wali/img-4.jpg"] {
-    width: auto;
-  }
 
-.future-predicts-fashion {
+.scrollable {
   margin:0;
 }
-.future-predicts-fashion .inner-header {
+.scrollable .inner-header {
   top: 50%;
   transform: translateY(-50%);
 }
-.future-predicts-fashion .inner-page {
+.scrollable .inner-page {
   height: 100%;
 }
-.future-predicts-fashion .main-text {
+.scrollable .main-text {
   width: 340px;
   height: auto;
   margin-left: 40px;
+  overflow: visible;
 }
-.future-predicts-fashion .main-image {
+.scrollable .main-image {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
@@ -684,10 +681,16 @@ ol {
   width: 220px;
 }
 
-.future-predicts-fashion .main-text > *:last-child {
+.scrollable .main-text > *:last-child {
   padding-bottom: 200px;
 }
 
+.wali-main-image {
+  margin: 150px 0;
+}
+
+
+/* future predicts fashion */
 .future-predicts-fashion .main-text-banner {
   padding: 0 40px;
   color: #f92424;
@@ -700,34 +703,6 @@ ol {
   }
 
 
-/*.future-predicts-fashion .main-content {
-  margin-top: -40px;
-  height: 600px;
-  position: relative;
-}
-
-.future-predicts-fashion .main-text {
-  width: 470px;
-  height: 100%;
-  margin-right: 20px;
-  padding-right: 30px;
-}
-
-.future-predicts-fashion .main-text p {
-  margin: 0 0 1em;
-}
-
-.future-predicts-fashion .main-image {
-  width: 220px;
-  height: 100%;
-  position: relative;
-}
-
-.future-predicts-fashion .main-image img {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}*/
 /* 5.html Observation Manual */
 .observation-manual .inner-no {
   background: url(../../imgs/5/1.png) left top no-repeat;
@@ -755,12 +730,18 @@ ol {
   margin: 10px;
 }
 
+/* elizabeth wilson */
+.elizabeth-wilson .inner-no {
+  background: url(../../imgs/elizabeth/count.png) left top no-repeat;
+  text-indent: -9999px;
+  min-height: 182px;
+  margin-bottom: 10px;
+}
 .elizabeth-wilson iframe {
   margin: 0 0 10px;
 }
 
 .elizabeth-wilson .main-content {
-  color: blue;
   line-height: 1.8;
 }
 
