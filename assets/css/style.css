@@ -722,3 +722,20 @@ ol {
   min-height: 1006px;
   padding: 50px 0 0 40px;
 }
+
+.elizabeth-wilson iframe {
+  margin: 0 0 10px;
+}
+
+.elizabeth-wilson .main-content {
+  color: blue;
+  line-height: 1.8;
+}
+
+.elizabeth-wilson .big {
+  font-size: 1.5em;
+  line-height: 1;
+}
+.elizabeth-wilson .black {
+  color: #000;
+}
