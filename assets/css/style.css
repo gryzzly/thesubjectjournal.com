@@ -689,6 +689,43 @@ ol {
   margin: 150px 0;
 }
 
+.spacewear .inner-no {
+  background: url(../../imgs/spacewear/count.png) left top no-repeat;
+  text-indent: -9999px;
+  min-height: 193px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
+
+.spacewear .inner-person {
+  font-size:24px;
+}
+
+.spacewear .main-text-banner {
+  color:#b90000;
+  font-family: nanamibook;
+  margin: 300px 0;
+  width: 320px;
+  position: relative;
+}
+
+ .spacewear-animation {
+  position: absolute;
+  top: 50%;
+  margin-top: -182px;
+  background: url(../../imgs/spacewear/2.gif);
+  right: -335px;
+  width: 365px;
+  height: 365px;
+}
+
+.spacewear .main-text {
+  width: 420px;
+}
+.spacewear .main-image {
+  left: 700px;
+}
+
 
 /* future predicts fashion */
 .future-predicts-fashion .main-text-banner {
@@ -701,6 +738,7 @@ ol {
     top: 50%;
     transform: translateY(-50%);
   }
+
 
 
 /* 5.html Observation Manual */

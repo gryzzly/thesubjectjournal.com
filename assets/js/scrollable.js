@@ -10,7 +10,6 @@ $(function () {
       positions = [],
       currentImageSrc = null;
 
-debugger;
   doc.on('scroll', onScroll);
 
   markers.each(function (index, element) {
@@ -43,9 +42,7 @@ debugger;
     if (!currentItem) {
       currentImageSrc = '';
       img.attr('src', currentImageSrc);
-    }
-
-    if (currentImageSrc !== currentItem.src) {
+    } else if (currentImageSrc !== currentItem.src) {
       currentImageSrc = currentItem.src;
       img.attr('src', currentImageSrc);
     }
