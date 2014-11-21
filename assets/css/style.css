@@ -159,7 +159,7 @@ ol {
     width: 150px;
   }
 
-/* Time Machine
+/* 1. Time Machine
 -------------------------------------*/
 .horizontal-wrapper {
   white-space: nowrap;
@@ -685,10 +685,7 @@ ol {
   padding-bottom: 200px;
 }
 
-.wali-main-image {
-  margin: 150px 0;
-}
-
+/* 2. Spacewear */
 .spacewear .inner-no {
   background: url(../../imgs/spacewear/count.png) left top no-repeat;
   text-indent: -9999px;
@@ -726,8 +723,118 @@ ol {
   left: 700px;
 }
 
+/* 3. Modern Utopia */
+body.modern-utopia {
+  margin: 0;
+  min-width: 0;
+}
+.modern-utopia .inner-page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+  .modern-utopia-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center-center;
+    background-position: fixed;
+    background-repeat: no-repeat;
+  }
+  .modern-utopia-page video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+     background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  /*.modern-utopia-page > .video-control {
+    background: linear-gradient(to right, rgba(0,0,0,0), rgba(255,0,0,0.2));
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 20%;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+}
+  .modern-utopia-page > .video-control:hover {
+    opacity: 1;
+  }*/
 
-/* future predicts fashion */
+  .modern-utopia-page.current {
+    display: block;
+  }
+  .modern-utopia-page-1 video {
+    background-image: url(../../imgs/modern-utopia/1.video1.png);
+}
+  .modern-utopia-page-2 {
+    background-image:url(../../imgs/modern-utopia/2.png);
+  }
+  .modern-utopia-page-3 {
+    background-image:url(../../imgs/modern-utopia/3.png);
+  }
+  .modern-utopia-page-4 {
+    background-image:url(../../imgs/modern-utopia/4.png);
+  }
+  .modern-utopia-page-5 {
+    background-image:url(../../imgs/modern-utopia/5.png);
+  }
+  .modern-utopia-page-6 {
+    background-image:url(../../imgs/modern-utopia/6.png);
+  }
+  .modern-utopia-page-7 {
+    background-image:url(../../imgs/modern-utopia/7.png);
+  }
+  .modern-utopia-page-8 {
+    background-image:url(../../imgs/modern-utopia/8.png);
+  }
+  .modern-utopia-page-9 {
+    background-image:url(../../imgs/modern-utopia/9.png);
+  }
+  .modern-utopia-page-10 {
+    background-image:url(../../imgs/modern-utopia/10.png);
+  }
+  .modern-utopia-page-11 {
+    background-image:url(../../imgs/modern-utopia/11.png);
+  }
+  .modern-utopia-page-12 {
+    background-image:url(../../imgs/modern-utopia/12.png);
+  }
+  .modern-utopia-page-13 video {
+    background-image:url(../../imgs/modern-utopia/13.video2.png);
+  }
+  .modern-utopia-page-14 {
+    background-image:url(../../imgs/modern-utopia/14.png);
+  }
+  .modern-utopia-page-15 {
+    background-image:url(../../imgs/modern-utopia/15.png);
+  }
+  .modern-utopia-page-16 video {
+    background-image:url(../../imgs/modern-utopia/16.video3.png);
+  }
+  .modern-utopia-page-17 {
+    background-image:url(../../imgs/modern-utopia/17.png);
+  }
+  .modern-utopia-page-18 video {
+    background-image:url(../../imgs/modern-utopia/18.video4.png);
+  }
+  .modern-utopia-page-19 {
+    background-image:url(../../imgs/modern-utopia/19.png);
+  }
+
+/* 4. Future Predicts Fashion */
 .future-predicts-fashion .main-text-banner {
   padding: 0 40px;
   color: #f92424;
@@ -741,7 +848,7 @@ ol {
 
 
 
-/* 5.html Observation Manual */
+/* 5. Observation Manual */
 .observation-manual .inner-no {
   background: url(../../imgs/5/1.png) left top no-repeat;
   text-indent: -9999px;
@@ -768,7 +875,7 @@ ol {
   margin: 10px;
 }
 
-/* elizabeth wilson */
+/* 6. Elizabeth Wilson */
 .elizabeth-wilson .inner-no {
   background: url(../../imgs/elizabeth/count.png) left top no-repeat;
   text-indent: -9999px;
@@ -789,4 +896,9 @@ ol {
 }
 .elizabeth-wilson .black {
   color: #000;
+}
+
+/* 7. Wali */
+.wali-main-image {
+  margin: 150px 0;
 }
