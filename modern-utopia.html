@@ -13,9 +13,7 @@
 <body class="body-inner modern-utopia">
   <main class="inner-page">
     <div class="modern-utopia-page modern-utopia-page-1 current">
-      <video poster="imgs/1x1.png">
-         <source src="imgs/modern-utopia/video/1.mp4">
-      </video>
+      <video poster="imgs/1x1.png" data-src="imgs/modern-utopia/video/1.mp4"></video>
       <!-- <div class="video-control"></div> -->
     </div>
 
@@ -31,22 +29,16 @@
     <div class="modern-utopia-page modern-utopia-page-11"></div>
     <div class="modern-utopia-page modern-utopia-page-12"></div>
     <div class="modern-utopia-page modern-utopia-page-13">
-      <video poster="imgs/1x1.png">
-         <source src="imgs/modern-utopia/video/2.mp4">
-      </video>
+      <video poster="imgs/1x1.png" data-src="imgs/modern-utopia/video/2.mp4"></video>
     </div>
     <div class="modern-utopia-page modern-utopia-page-14"></div>
     <div class="modern-utopia-page modern-utopia-page-15"></div>
     <div class="modern-utopia-page modern-utopia-page-16">
-      <video poster="imgs/1x1.png">
-         <source src="imgs/modern-utopia/video/3.mp4">
-      </video>
+      <video poster="imgs/1x1.png" data-src="imgs/modern-utopia/video/3.mp4"></video>
     </div>
     <div class="modern-utopia-page modern-utopia-page-17"></div>
     <div class="modern-utopia-page modern-utopia-page-18">
-      <video poster="imgs/1x1.png">
-         <source src="imgs/modern-utopia/video/4.mp4">
-      </video>
+      <video poster="imgs/1x1.png" data-src="imgs/modern-utopia/video/4.mp4"></video>
     </div>
     <div class="modern-utopia-page modern-utopia-page-19"></div>
   </main>
@@ -60,6 +52,9 @@
 
     if (event.target.tagName.toLowerCase() === 'video') {
       video = event.target;
+      if (!video.src) {
+        video.src = video.dataset.src;
+      }
       if (!isControlArea($(video).parent(), event.pageX)) {
         return video.paused ? video.play() : video.pause();
       } else {
