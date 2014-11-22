@@ -12,8 +12,8 @@
 
 <body class="body-inner modern-utopia">
   <main class="inner-page">
-    <div class="modern-utopia-page modern-utopia-page-1 current">
-      <video poster="imgs/1x1.png" data-src="imgs/modern-utopia/video/1.mp4"></video>
+    <div class="modern-utopia-page modern-utopia-page-1 current video">
+      <video poster="imgs/1x1.png" src="imgs/modern-utopia/video/1.mp4" autoplay></video>
       <!-- <div class="video-control"></div> -->
     </div>
 
@@ -28,17 +28,17 @@
     <div class="modern-utopia-page modern-utopia-page-10"></div>
     <div class="modern-utopia-page modern-utopia-page-11"></div>
     <div class="modern-utopia-page modern-utopia-page-12"></div>
-    <div class="modern-utopia-page modern-utopia-page-13">
-      <video poster="imgs/1x1.png" data-src="imgs/modern-utopia/video/2.mp4"></video>
+    <div class="modern-utopia-page modern-utopia-page-13 video">
+      <video poster="imgs/1x1.png" data-src="imgs/modern-utopia/video/2.mp4" autoplay></video>
     </div>
     <div class="modern-utopia-page modern-utopia-page-14"></div>
     <div class="modern-utopia-page modern-utopia-page-15"></div>
-    <div class="modern-utopia-page modern-utopia-page-16">
-      <video poster="imgs/1x1.png" data-src="imgs/modern-utopia/video/3.mp4"></video>
+    <div class="modern-utopia-page modern-utopia-page-16 video">
+      <video poster="imgs/1x1.png" data-src="imgs/modern-utopia/video/3.mp4" autoplay></video>
     </div>
     <div class="modern-utopia-page modern-utopia-page-17"></div>
-    <div class="modern-utopia-page modern-utopia-page-18">
-      <video poster="imgs/1x1.png" data-src="imgs/modern-utopia/video/4.mp4"></video>
+    <div class="modern-utopia-page modern-utopia-page-18 video">
+      <video poster="imgs/1x1.png" data-src="imgs/modern-utopia/video/4.mp4" autoplay></video>
     </div>
     <div class="modern-utopia-page modern-utopia-page-19"></div>
   </main>
@@ -48,7 +48,7 @@
   var pages = $('.modern-utopia-page');
 
   pages.parent().on('click', function advancePage (event) {
-    var current, next, video;
+    var current, next, video, upcomingVideo;
 
     if (event.target.tagName.toLowerCase() === 'video') {
       video = event.target;
@@ -61,8 +61,14 @@
         video.pause();
       }
     }
+
     current = pages.filter('.current'),
     next = (next = current.next()).length ? next : pages.first();
+    if (next.hasClass('video')) {
+      upcomingVideo = next.children('video')[0];
+      setVideoSource(upcomingVideo);
+      upcomingVideo.play();
+    }
     next.addClass('current');
     current.removeClass('current');
   });
@@ -71,6 +77,12 @@
     width = parent.width();
     // the click is on the right 20% of the parent
     return 1 - (x / width) < .2;
+  }
+
+  function setVideoSource (video) {
+    if (!video.src) {
+      video.src = video.dataset.src;
+    }
   }
 }());
 </script>

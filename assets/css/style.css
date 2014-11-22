@@ -740,7 +740,7 @@ body.modern-utopia {
     display: none;
     overflow: hidden;
     background-size: cover;
-    background-position: center-center;
+    background-position: 50% 50%;
     background-position: fixed;
     background-repeat: no-repeat;
   }
@@ -754,7 +754,7 @@ body.modern-utopia {
     width: auto;
     height: auto;
     background-size: cover;
-     background-position: 50% 50%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
   }
   /*.modern-utopia-page > .video-control {
@@ -777,61 +777,61 @@ body.modern-utopia {
     display: block;
   }
   .modern-utopia-page-1 video {
-    background-image: url(../../imgs/modern-utopia/1.video1.png);
+    background-image: url(../../imgs/modern-utopia/1.video1.jpg);
 }
   .modern-utopia-page-2 {
-    background-image:url(../../imgs/modern-utopia/2.png);
+    background-image:url(../../imgs/modern-utopia/2.jpg);
   }
   .modern-utopia-page-3 {
-    background-image:url(../../imgs/modern-utopia/3.png);
+    background-image:url(../../imgs/modern-utopia/3.jpg);
   }
   .modern-utopia-page-4 {
-    background-image:url(../../imgs/modern-utopia/4.png);
+    background-image:url(../../imgs/modern-utopia/4.jpg);
   }
   .modern-utopia-page-5 {
-    background-image:url(../../imgs/modern-utopia/5.png);
+    background-image:url(../../imgs/modern-utopia/5.jpg);
   }
   .modern-utopia-page-6 {
-    background-image:url(../../imgs/modern-utopia/6.png);
+    background-image:url(../../imgs/modern-utopia/6.jpg);
   }
   .modern-utopia-page-7 {
-    background-image:url(../../imgs/modern-utopia/7.png);
+    background-image:url(../../imgs/modern-utopia/7.jpg);
   }
   .modern-utopia-page-8 {
-    background-image:url(../../imgs/modern-utopia/8.png);
+    background-image:url(../../imgs/modern-utopia/8.jpg);
   }
   .modern-utopia-page-9 {
-    background-image:url(../../imgs/modern-utopia/9.png);
+    background-image:url(../../imgs/modern-utopia/9.jpg);
   }
   .modern-utopia-page-10 {
-    background-image:url(../../imgs/modern-utopia/10.png);
+    background-image:url(../../imgs/modern-utopia/10.jpg);
   }
   .modern-utopia-page-11 {
-    background-image:url(../../imgs/modern-utopia/11.png);
+    background-image:url(../../imgs/modern-utopia/11.jpg);
   }
   .modern-utopia-page-12 {
-    background-image:url(../../imgs/modern-utopia/12.png);
+    background-image:url(../../imgs/modern-utopia/12.jpg);
   }
   .modern-utopia-page-13 video {
-    background-image:url(../../imgs/modern-utopia/13.video2.png);
+    background-image:url(../../imgs/modern-utopia/13.video2.jpg);
   }
   .modern-utopia-page-14 {
-    background-image:url(../../imgs/modern-utopia/14.png);
+    background-image:url(../../imgs/modern-utopia/14.jpg);
   }
   .modern-utopia-page-15 {
-    background-image:url(../../imgs/modern-utopia/15.png);
+    background-image:url(../../imgs/modern-utopia/15.jpg);
   }
   .modern-utopia-page-16 video {
-    background-image:url(../../imgs/modern-utopia/16.video3.png);
+    background-image:url(../../imgs/modern-utopia/16.video3.jpg);
   }
   .modern-utopia-page-17 {
-    background-image:url(../../imgs/modern-utopia/17.png);
+    background-image:url(../../imgs/modern-utopia/17.jpg);
   }
   .modern-utopia-page-18 video {
-    background-image:url(../../imgs/modern-utopia/18.video4.png);
+    background-image:url(../../imgs/modern-utopia/18.video4.jpg);
   }
   .modern-utopia-page-19 {
-    background-image:url(../../imgs/modern-utopia/19.png);
+    background-image:url(../../imgs/modern-utopia/19.jpg);
   }
 
 /* 4. Future Predicts Fashion */
@@ -901,4 +901,8 @@ body.modern-utopia {
 /* 7. Wali */
 .wali-main-image {
   margin: 150px 0;
+}
+
+.wali img[src='imgs/wali/img-4.jpg'] {
+  width: 150px;
 }
