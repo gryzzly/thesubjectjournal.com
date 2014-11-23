@@ -20,17 +20,6 @@
   font-weight: bold;
   font-style: normal;
 }
-@font-face {
-  font-family: 'nanamithin';
-  src: url('../type/nanami-thin-webfont.eot');
-  src: url('../type/nanami-thin-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../type/nanami-thin-webfont.woff2') format('woff2'),
-       url('../type/nanami-thin-webfont.woff') format('woff'),
-       url('../type/nanami-thin-webfont.ttf') format('truetype'),
-       url('../type/nanami-thin-webfont.svg#nanamibold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
 * {
   margin: 0;
