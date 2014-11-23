@@ -109,6 +109,14 @@ ol {
   width: 48%;
   position: relative;
 }
+  .index-info-link {
+    top: 0;
+    right: 0;
+    text-indent: 0!important;
+  }
+    .index-info-link > img {
+      width: 30px;
+    }
   .index-image-map-list {
     list-style: none;
   }
