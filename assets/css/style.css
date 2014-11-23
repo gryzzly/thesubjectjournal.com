@@ -777,9 +777,7 @@ body.modern-utopia {
   .modern-utopia-page.current {
     display: block;
   }
-  .modern-utopia-page-1 video {
-    background-image: url(../../imgs/modern-utopia/1.video1.jpg);
-}
+
   .modern-utopia-page-2 {
     background-image:url(../../imgs/modern-utopia/2.jpg);
   }
@@ -813,23 +811,14 @@ body.modern-utopia {
   .modern-utopia-page-12 {
     background-image:url(../../imgs/modern-utopia/12.jpg);
   }
-  .modern-utopia-page-13 video {
-    background-image:url(../../imgs/modern-utopia/13.video2.jpg);
-  }
   .modern-utopia-page-14 {
     background-image:url(../../imgs/modern-utopia/14.jpg);
   }
   .modern-utopia-page-15 {
     background-image:url(../../imgs/modern-utopia/15.jpg);
   }
-  .modern-utopia-page-16 video {
-    background-image:url(../../imgs/modern-utopia/16.video3.jpg);
-  }
   .modern-utopia-page-17 {
     background-image:url(../../imgs/modern-utopia/17.jpg);
-  }
-  .modern-utopia-page-18 video {
-    background-image:url(../../imgs/modern-utopia/18.video4.jpg);
   }
   .modern-utopia-page-19 {
     background-image:url(../../imgs/modern-utopia/19.jpg);
