@@ -20,6 +20,17 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'nanamithin';
+  src: url('../type/nanami-thin-webfont.eot');
+  src: url('../type/nanami-thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../type/nanami-thin-webfont.woff2') format('woff2'),
+       url('../type/nanami-thin-webfont.woff') format('woff'),
+       url('../type/nanami-thin-webfont.ttf') format('truetype'),
+       url('../type/nanami-thin-webfont.svg#nanamibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -155,6 +166,16 @@ ol {
     height: 150px;
     width: 150px;
   }
+
+.back-button {
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: underline;
+  position: fixed;
+  left:4px;
+  top:4px;
+  z-index: 999;
+}
 
 /* 1. Time Machine
 -------------------------------------*/
@@ -822,11 +843,17 @@ body.modern-utopia {
   }
 
 /* 4. Future Predicts Fashion */
+.future-predicts-fashion .inner-no {
+  background: url(../../imgs/6/count.png) left top no-repeat;
+  background-size: 106px;
+  text-indent: -9999px;
+  min-height: 153px;
+}
+
 .future-predicts-fashion .main-text-banner {
   padding: 0 40px;
   color: #f92424;
   font-family: nanamibook;
-
   width: 100%;
   padding-right: 100%;
   background: url(../../imgs/6/visual.png) right center no-repeat;
@@ -890,6 +917,13 @@ body.modern-utopia {
 }
 
 /* 7. Wali */
+.wali .inner-no {
+  background: url(../../imgs/wali/count.png) left top no-repeat;
+  background-size: 86px;
+  text-indent: -9999px;
+  min-height: 160px;
+}
+
 .wali-main-image {
   margin: 150px 0;
 }
