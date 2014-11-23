@@ -721,6 +721,7 @@ ol {
 }
 .spacewear .main-image {
   left: 700px;
+  width: 185px;
 }
 
 /* 3. Modern Utopia */
@@ -839,6 +840,10 @@ body.modern-utopia {
   padding: 0 40px;
   color: #f92424;
   font-family: nanamibook;
+
+  width: 100%;
+  padding-right: 100%;
+  background: url(../../imgs/6/visual.png) right center no-repeat;
 }
   .future-predicts-fashion .main-text-banner-content {
     position: relative;
