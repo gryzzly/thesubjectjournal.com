@@ -224,8 +224,6 @@ ol {
 -------------------------------------*/
 .grid,
 [class*='col-'] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 
 }
@@ -517,8 +515,12 @@ ol {
   position: absolute;
   margin-left: -34px;
   top: 75%;
-  transform-origin: 0 0;
-  transform: rotate(-90deg);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 #y1930 .tm-content {
@@ -633,7 +635,7 @@ ol {
   .inner-no {
     font-size: 180px;
     font-weight: bold;
-    line-height: .85;
+    line-height: .85
     /*margin-left: -.1ex;*/
   }
   .inner-title {
@@ -659,6 +661,13 @@ ol {
   line-height: 1.4;
   overflow: hidden;
 }
+
+  .main-text p {
+    margin: 0 0 16px;
+  }
+  .main-text a {
+    text-decoration: underline;
+  }
   .main-question,
   .main-answer {
     margin-bottom: 2em;
@@ -680,7 +689,9 @@ ol {
 }
 .scrollable .inner-header {
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .scrollable .inner-page {
   height: 100%;
@@ -694,7 +705,9 @@ ol {
 .scrollable .main-image {
   position: fixed;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 620px;
   width: 220px;
 }
@@ -739,7 +752,7 @@ ol {
 }
 .spacewear .main-image {
   left: 700px;
-  width: 185px;
+  width: 360px;
 }
 
 /* 3. Modern Utopia */
@@ -767,7 +780,9 @@ body.modern-utopia {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -861,7 +876,9 @@ body.modern-utopia {
   .future-predicts-fashion .main-text-banner-content {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
 
@@ -887,6 +904,9 @@ body.modern-utopia {
   width: 180px;
   min-height: 1006px;
   padding: 50px 0 0 40px;
+}
+.observation-manual .intro a {
+  text-decoration: underline;
 }
 
 .observation-manual dd {

@@ -40,7 +40,7 @@ $(function () {
     var currentItem = positions[matchPosition(doc.scrollTop())];
 
     if (!currentItem) {
-      currentImageSrc = '';
+      currentImageSrc = 'imgs/1x1.png';
       img.attr('src', currentImageSrc);
     } else if (currentImageSrc !== currentItem.src) {
       currentImageSrc = currentItem.src;
