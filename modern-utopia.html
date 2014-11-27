@@ -20,20 +20,20 @@
     <div class="modern-utopia-page modern-utopia-page-3"></div>
 
     <div class="modern-utopia-page modern-utopia-page-4 video">
-      <video poster="imgs/1x1.png" data-src="http://player.vimeo.com/external/112094532.sd.mp4?s=418b434e3b278c6e727691c2548b20b3" autoplay></video>
+      <video data-src="http://player.vimeo.com/external/112094532.sd.mp4?s=418b434e3b278c6e727691c2548b20b3"></video>
     </div>
 
     <div class="modern-utopia-page modern-utopia-page-5"></div>
     <div class="modern-utopia-page modern-utopia-page-6"></div>
 
     <div class="modern-utopia-page modern-utopia-page-7 video">
-      <video poster="imgs/1x1.png" data-src="http://player.vimeo.com/external/112101147.sd.mp4?s=2d0e2e0385c43c247639e24fc30e36a6" autoplay></video>
+      <video data-src="http://player.vimeo.com/external/112101147.sd.mp4?s=2d0e2e0385c43c247639e24fc30e36a6"></video>
     </div>
 
     <div class="modern-utopia-page modern-utopia-page-8"></div>
 
     <div class="modern-utopia-page modern-utopia-page-9">
-      <video poster="imgs/1x1.png" data-src="http://player.vimeo.com/external/112599805.sd.mp4?s=1bf49320c907f7e32f058d37235fb6f1" autoplay></video>
+      <video data-src="http://player.vimeo.com/external/112599805.sd.mp4?s=1bf49320c907f7e32f058d37235fb6f1"></video>
     </div>
   </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
@@ -98,8 +98,9 @@ if (!window.jQuery) {
     // start next video
     if (next.hasClass('video')) {
       upcomingVideo = next.children('video')[0];
-      setVideoSource(upcomingVideo);
-      upcomingVideo.play();
+      setVideoSource(upcomingVideo, function () {
+        upcomingVideo.play();
+      });
     }
 
     next.addClass('current');
@@ -122,8 +123,9 @@ if (!window.jQuery) {
     }
   }
 
-  function setVideoSource (video) {
+  function setVideoSource (video, fn) {
     if (!video.src) {
+      video.oncanplay = fn;
       video.src = video.dataset.src;
     }
   }

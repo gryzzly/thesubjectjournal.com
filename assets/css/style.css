@@ -814,21 +814,6 @@ body.modern-utopia {
     background-position: 50% 50%;
     background-repeat: no-repeat;
   }
-  /*.modern-utopia-page > .video-control {
-    background: linear-gradient(to right, rgba(0,0,0,0), rgba(255,0,0,0.2));
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    width: 20%;
-    bottom: 0;
-    pointer-events: none;
-    z-index: 2;
-    opacity: 0;
-}
-  .modern-utopia-page > .video-control:hover {
-    opacity: 1;
-  }*/
 
   .modern-utopia-page.current {
     display: block;
@@ -843,16 +828,29 @@ body.modern-utopia {
   .modern-utopia-page-3 {
     background-image:url(../../imgs/modern-utopia/3.jpg);
   }
+  .modern-utopia-page-4 {
+    background-image:url(../../imgs/modern-utopia/4.video2.jpg);
+  }
   .modern-utopia-page-5 {
     background-image:url(../../imgs/modern-utopia/5.jpg);
   }
   .modern-utopia-page-6 {
     background-image:url(../../imgs/modern-utopia/6.jpg);
   }
+  .modern-utopia-page-7 {
+    background-image:url(../../imgs/modern-utopia/7.video3.jpg);
+  }
   .modern-utopia-page-8 {
     background-image:url(../../imgs/modern-utopia/8.jpg);
   }
-
+  .modern-utopia-page-9 {
+    background-image:url(../../imgs/modern-utopia/9.video4.jpg);
+  }
+    .modern-utopia-page-9 video {
+      width: 320px;
+      min-height: 0;
+      min-width: 0;
+    }
 /* 4. Future Predicts Fashion */
 .future-predicts-fashion .inner-no {
   background: url(../../imgs/6/count.png) left top no-repeat;
