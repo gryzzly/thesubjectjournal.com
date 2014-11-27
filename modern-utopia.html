@@ -32,7 +32,7 @@
 
     <div class="modern-utopia-page modern-utopia-page-8"></div>
 
-    <div class="modern-utopia-page modern-utopia-page-9">
+    <div class="modern-utopia-page modern-utopia-page-9 video">
       <video data-src="http://player.vimeo.com/external/112599805.sd.mp4?s=1bf49320c907f7e32f058d37235fb6f1"></video>
     </div>
   </main>
@@ -58,8 +58,6 @@ if (!window.jQuery) {
       }
       if (!isControl.controlArea) {
         return video.paused ? video.play() : video.pause();
-      } else {
-        video.pause();
       }
     }
 
