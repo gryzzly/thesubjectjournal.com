@@ -82,18 +82,26 @@ if (!window.jQuery) {
   });
 
   function advancePage (directionRight) {
-    var current, next, upcomingVideo;
+    var current, next, currentVideo, upcomingVideo;
 
     current = pages.filter('.current');
     next = directionRight
         ? (next = current.next()).length ? next : pages.first()
         : (next = current.prev()).length ? next : pages.last();
 
+    // pause current video
+    if (current.hasClass('video')) {
+      currentVideo = current.children('video')[0];
+      currentVideo.pause();
+    }
+
+    // start next video
     if (next.hasClass('video')) {
       upcomingVideo = next.children('video')[0];
       setVideoSource(upcomingVideo);
       upcomingVideo.play();
     }
+
     next.addClass('current');
     current.removeClass('current');
   }
