@@ -223,7 +223,7 @@
     </div>
 
     <div class="tm-item horizontal-item the-end">
-      <img src="imgs/tm/the-end.png">
+      <a href="/"><img src="imgs/tm/the-end.png"></a>
     </div>
 
 
@@ -247,7 +247,6 @@ $(function() {
       var direction, code = e.keyCode || e.which;
       /* 37 left, 39 right */
       if ( code === 37 || code === 39 ) {
-        debugger;
         e.preventDefault();
 
         $('html, body').stop().animate({

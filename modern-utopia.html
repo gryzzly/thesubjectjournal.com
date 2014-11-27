@@ -13,57 +13,82 @@
 <body class="body-inner modern-utopia">
   <a class="back-button" href="/">back</a>
   <main class="inner-page">
-    <div class="modern-utopia-page modern-utopia-page-1 current video">
-      <video poster="imgs/1x1.png" src="http://player.vimeo.com/external/112086201.sd.mp4?s=c18c39096402d1a717401434e57f55bc" autoplay></video>
-    </div>
 
+
+    <div class="modern-utopia-page modern-utopia-page-1 current"></div>
     <div class="modern-utopia-page modern-utopia-page-2"></div>
     <div class="modern-utopia-page modern-utopia-page-3"></div>
-    <div class="modern-utopia-page modern-utopia-page-4"></div>
-    <div class="modern-utopia-page modern-utopia-page-5"></div>
-    <div class="modern-utopia-page modern-utopia-page-6"></div>
-    <div class="modern-utopia-page modern-utopia-page-7"></div>
-    <!-- <div class="modern-utopia-page modern-utopia-page-8"></div> -->
-    <div class="modern-utopia-page modern-utopia-page-9"></div>
-    <div class="modern-utopia-page modern-utopia-page-10"></div>
-    <div class="modern-utopia-page modern-utopia-page-11"></div>
-    <div class="modern-utopia-page modern-utopia-page-12"></div>
-    <div class="modern-utopia-page modern-utopia-page-13 video">
+
+    <div class="modern-utopia-page modern-utopia-page-4 video">
       <video poster="imgs/1x1.png" data-src="http://player.vimeo.com/external/112094532.sd.mp4?s=418b434e3b278c6e727691c2548b20b3" autoplay></video>
     </div>
-    <div class="modern-utopia-page modern-utopia-page-14"></div>
-    <div class="modern-utopia-page modern-utopia-page-15"></div>
-    <div class="modern-utopia-page modern-utopia-page-16 video">
+
+    <div class="modern-utopia-page modern-utopia-page-5"></div>
+    <div class="modern-utopia-page modern-utopia-page-6"></div>
+
+    <div class="modern-utopia-page modern-utopia-page-7 video">
       <video poster="imgs/1x1.png" data-src="http://player.vimeo.com/external/112101147.sd.mp4?s=2d0e2e0385c43c247639e24fc30e36a6" autoplay></video>
     </div>
-    <div class="modern-utopia-page modern-utopia-page-17"></div>
-    <div class="modern-utopia-page modern-utopia-page-18 video">
+
+    <div class="modern-utopia-page modern-utopia-page-8"></div>
+
+    <div class="modern-utopia-page modern-utopia-page-9">
       <video poster="imgs/1x1.png" data-src="http://player.vimeo.com/external/112599805.sd.mp4?s=1bf49320c907f7e32f058d37235fb6f1" autoplay></video>
     </div>
-    <div class="modern-utopia-page modern-utopia-page-19"></div>
   </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>
+if (!window.jQuery) {
+  document.write('<scrip' + 't src="assets/js/jquery-2.1.1.min.js"></scr'+ 'ipt>');
+}
+</script>
 <script>
 (function () {
   var pages = $('.modern-utopia-page');
 
-  pages.parent().on('click', function advancePage (event) {
-    var current, next, video, upcomingVideo;
+  pages.parent().on('click', function handleContainerClick (event) {
+    var current, next, video, upcomingVideo, isControl;
+
+    isControl = isControlArea(event.currentTarget, event.pageX);
 
     if (event.target.tagName.toLowerCase() === 'video') {
       video = event.target;
       if (!video.src) {
         video.src = video.dataset.src;
       }
-      if (!isControlArea($(video).parent(), event.pageX)) {
+      if (!isControl.controlArea) {
         return video.paused ? video.play() : video.pause();
       } else {
         video.pause();
       }
     }
 
-    current = pages.filter('.current'),
-    next = (next = current.next()).length ? next : pages.first();
+    if (!isControl.controlArea) return;
+
+    advancePage(isControl.right);
+  });
+
+  $(document).on('keydown', function (e) {
+      var direction,
+          code = e.keyCode || e.which,
+          left = code === 37,
+          right = code === 39;
+
+      /* 37 left, 39 right */
+      if ( left || right ) {
+        e.preventDefault();
+        advancePage(right);
+      }
+  });
+
+  function advancePage (directionRight) {
+    var current, next, upcomingVideo;
+
+    current = pages.filter('.current');
+    next = directionRight
+        ? (next = current.next()).length ? next : pages.first()
+        : (next = current.prev()).length ? next : pages.last();
+
     if (next.hasClass('video')) {
       upcomingVideo = next.children('video')[0];
       setVideoSource(upcomingVideo);
@@ -71,12 +96,22 @@
     }
     next.addClass('current');
     current.removeClass('current');
-  });
+  }
 
   function isControlArea (parent, x) {
-    width = parent.width();
+    var width = parent.offsetWidth,
+        xRelative = x / width,
+        left, right;
+
     // the click is on the right 20% of the parent
-    return 1 - (x / width) < .2;
+    right = xRelative > .75;
+    // the click is on the left 20% of the parent
+    left = xRelative < .25;
+    return {
+      controlArea: (left || right),
+      right: right,
+      left: left
+    }
   }
 
   function setVideoSource (video) {

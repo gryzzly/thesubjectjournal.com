@@ -776,6 +776,29 @@ body.modern-utopia {
     background-position: fixed;
     background-repeat: no-repeat;
   }
+
+  .modern-utopia-page::before,
+  .modern-utopia-page::after {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 15%;
+    top: 0;
+    bottom: 0;
+    content: '';
+  }
+
+  /* left */
+  .modern-utopia-page::before {
+    left: 0;
+    background-image: url(../../imgs/modern-utopia/left.png);
+  }
+
+  /* right */
+  .modern-utopia-page::after {
+    right: 0;
+    background-image: url(../../imgs/modern-utopia/right.png);
+  }
   .modern-utopia-page video {
     position: absolute;
     left: 50%;
@@ -811,14 +834,14 @@ body.modern-utopia {
     display: block;
   }
 
+  .modern-utopia-page-1 {
+    background-image:url(../../imgs/modern-utopia/1.jpg);
+  }
   .modern-utopia-page-2 {
     background-image:url(../../imgs/modern-utopia/2.jpg);
   }
   .modern-utopia-page-3 {
     background-image:url(../../imgs/modern-utopia/3.jpg);
-  }
-  .modern-utopia-page-4 {
-    background-image:url(../../imgs/modern-utopia/4.jpg);
   }
   .modern-utopia-page-5 {
     background-image:url(../../imgs/modern-utopia/5.jpg);
@@ -826,35 +849,8 @@ body.modern-utopia {
   .modern-utopia-page-6 {
     background-image:url(../../imgs/modern-utopia/6.jpg);
   }
-  .modern-utopia-page-7 {
-    background-image:url(../../imgs/modern-utopia/7.jpg);
-  }
   .modern-utopia-page-8 {
     background-image:url(../../imgs/modern-utopia/8.jpg);
-  }
-  .modern-utopia-page-9 {
-    background-image:url(../../imgs/modern-utopia/9.jpg);
-  }
-  .modern-utopia-page-10 {
-    background-image:url(../../imgs/modern-utopia/10.jpg);
-  }
-  .modern-utopia-page-11 {
-    background-image:url(../../imgs/modern-utopia/11.jpg);
-  }
-  .modern-utopia-page-12 {
-    background-image:url(../../imgs/modern-utopia/12.jpg);
-  }
-  .modern-utopia-page-14 {
-    background-image:url(../../imgs/modern-utopia/14.jpg);
-  }
-  .modern-utopia-page-15 {
-    background-image:url(../../imgs/modern-utopia/15.jpg);
-  }
-  .modern-utopia-page-17 {
-    background-image:url(../../imgs/modern-utopia/17.jpg);
-  }
-  .modern-utopia-page-19 {
-    background-image:url(../../imgs/modern-utopia/19.jpg);
   }
 
 /* 4. Future Predicts Fashion */
