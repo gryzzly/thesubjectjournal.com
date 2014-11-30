@@ -921,6 +921,7 @@ body.modern-utopia {
 
 .elizabeth-wilson .main-content {
   line-height: 1.8;
+  margin-top: 80px;
 }
 
 .elizabeth-wilson .big {
@@ -929,6 +930,59 @@ body.modern-utopia {
 }
 .elizabeth-wilson .black {
   color: #000;
+}
+
+.elizabeth-read-more a {
+  float: left;
+  width: 23%;
+  margin-right: 10%;
+}
+
+.elizabeth-read-more  {
+  overflow: hidden;
+  margin: 30px 0;
+}
+.elizabeth-read-more h1 {
+  font-size: 16px;
+  margin: 0 0 30px;
+}
+.elizabeth-read-more img,
+.elizabeth-read-more strong {
+  display: block;
+  margin: 0 0 10px;
+}
+
+.elizabeth-read-more img {
+  box-shadow: 4px 4px 5px #888;
+}
+
+.elizabeth-wilson-content {
+  background: rgba(255, 255, 255, .75);
+  width: 727px;
+  height: 500px;
+  top: -480px;
+  position: relative;
+  padding: 30px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transition: top .25s;
+  transition: top .25s;
+}
+  .elizabeth-wilson-content.toggled {
+    top: 0;
+  }
+.elizabeth-wilson-close {
+  font-family: nanamithin;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fc0f1d;
+  background: 0;
+  font-size: 30px;
+  border: 0;
 }
 
 /* 7. Wali */

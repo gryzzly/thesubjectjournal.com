@@ -18,9 +18,41 @@
   </header>
   <main class="inner-page">
     <div class="main-content grid">
-      <iframe src="//player.vimeo.com/video/112096570?title=0&amp;byline=0&amp;portrait=0" width="720" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br>
-We met with a fashion theorist <span class="big black">Elizabeth Wilson</span> in the archives of the London College of Fashion. In her seminal work Adorned in Dreams: Fashion and modernity published in 1985, Elizabeth spoke of the history of <span class="big">utopian dress</span> as a history of humanity’s pursuit of liberation through clothes. Much of what Elizabeth describes as a sartorial dream of early socialists, feminists and other political activists (<a href="time-machine.html">see the whole story in our Time machine section</a>) has become truth: today people can wear absolutely anything they want, at least in Western cultures. Clothes are comfortable and hygienic, people are hiding their identities,statuses and backgrounds under gender neutral apparels and outfits of austerity and <span class="big">conformity</span>. However, what once was seen as positive and encouraging has turned into a kind of “depressing” reality where people avoid any <span class="big">deviance</span> and “have opted for comfort instead of beauty”. Ironically, the work of Wilson was written in the 80’s, possibly the last decade of fashion flamboyance, that was abruptly changed by the dullness of mass market giants producing grey t-shirts and marginal designers producing the same grey t-shirts but 10 times more expensive. Here is a piece of our interview with Elizabeth on the conformity of contemporary fashion and critique of utopianism.
+      <iframe src="//player.vimeo.com/video/112096570?title=0&amp;byline=0&amp;portrait=0" width="720" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <div class="elizabeth-wilson-content">
+        <button class="elizabeth-wilson-close">×</button>
+        We met with a fashion theorist <span class="big black">Elizabeth Wilson</span> in the archives of the London College of Fashion. In her seminal work Adorned in Dreams: Fashion and modernity published in 1985, Elizabeth spoke of the history of <span class="big">utopian dress</span> as a history of humanity’s pursuit of liberation through clothes. Much of what Elizabeth describes as a sartorial dream of early socialists, feminists and other political activists (<a href="time-machine.html">see the whole story in our Time machine section</a>) has become truth: today people can wear absolutely anything they want, at least in Western cultures. Clothes are comfortable and hygienic, people are hiding their identities,statuses and backgrounds under gender neutral apparels and outfits of austerity and <span class="big">conformity</span>. However, what once was seen as positive and encouraging has turned into a kind of “depressing” reality where people avoid any <span class="big">deviance</span> and “have opted for comfort instead of beauty”. Ironically, the work of Wilson was written in the 80’s, possibly the last decade of fashion flamboyance, that was abruptly changed by the dullness of mass market giants producing grey t-shirts and marginal designers producing the same grey t-shirts but 10 times more expensive. Here is a piece of our interview with Elizabeth on the conformity of contemporary fashion and critique of utopianism.
+        <div class="elizabeth-read-more">
+          <h1>Further reading on utopian studies:</h1>
+          <a href="http://www.jstor.org/discover/10.2307/20718951?uid=3738032&uid=2&uid=4&sid=21105283785853">
+            <img src="imgs/elizabeth/marin.png">
+            <strong>Richard Martin</strong>
+            The deceit of dress: utopian visions and the arguments against it.
+          </a>
+          <a href="http://www.amazon.co.uk/Archaeologies-Future-Desire-Science-Fictions/dp/1844675386">
+            <img src="imgs/elizabeth/jameson.png" height="200" width="133">
+            <strong>Frederic Jameson</strong>
+           Archaeologies of the future: the desire called utopia and other science fictions
+         </a>
+          <a href="http://www.ingentaconnect.com/content/bloomsbury/jdbc/2008/00000012/00000003/art00003">
+            <img src="imgs/elizabeth/helman.png" height="200" width="133">
+            <strong>Anat Helman</strong>
+          Kibbutz Dress in the 1950s: Utopian Equality, Anti Fashion, and Change.</a>
+        </div>
+      </div>
     </div>
   </main>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>
+if (!window.jQuery) {
+  document.write('<scrip' + 't src="assets/js/jquery-2.1.1.min.js"></scr'+ 'ipt>');
+}
+</script>
+<script>
+$('.elizabeth-wilson-close').on('click', function () {
+  $(this.parentNode).addClass('toggled');
+  this.remove();
+})
+</script>
 </html>
