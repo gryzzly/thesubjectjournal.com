@@ -96,9 +96,7 @@ if (!window.jQuery) {
     // start next video
     if (next.hasClass('video')) {
       upcomingVideo = next.children('video')[0];
-      setVideoSource(upcomingVideo, function () {
-        upcomingVideo.play();
-      });
+      initPlay(upcomingVideo);
     }
 
     next.addClass('current');
@@ -121,10 +119,12 @@ if (!window.jQuery) {
     }
   }
 
-  function setVideoSource (video, fn) {
+  function initPlay (video) {
     if (!video.src) {
-      video.oncanplay = fn;
+      video.autoplay = true;
       video.src = video.dataset.src;
+    } else {
+      video.play();
     }
   }
 }());

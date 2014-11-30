@@ -845,6 +845,7 @@ body.modern-utopia {
   }
   .modern-utopia-page-9 {
     background-image:url(../../imgs/modern-utopia/9.video4.jpg);
+    background-size: 320px;
   }
     .modern-utopia-page-9 video {
       width: 320px;
